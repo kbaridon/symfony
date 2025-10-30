@@ -6,7 +6,7 @@
 		protected $_price;
 		protected $_resistance;
 
-		public function getName() {
+		public function getNom() {
 			return ($this->_name);
 		}
 

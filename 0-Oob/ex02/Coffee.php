@@ -9,7 +9,7 @@
 		{
 			$this->_name = "Coffee";
 			$this->_price = 3.99;
-			$this->_resistance = 10;
+			$this->_resistance = 5;
 		}
 
 		public function getDescription() {
