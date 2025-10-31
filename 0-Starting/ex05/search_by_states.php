@@ -28,6 +28,7 @@
         'NJ' => 'trenton',
         'KS' => 'Topeka',
         ];
+        $result = array();
         $list = getLocations($str);
         foreach ($list as $location)
         {
@@ -41,7 +42,7 @@
                     {
                         if ($abb == $abbreviation)
                         {
-                            echo $city . " is the capital of " . $location . ".\n";
+                            array_push($result, $city . " is the capital of " . $location . ".");
                             $is_state = true;
                         }
                     }
@@ -58,7 +59,7 @@
                         {
                             if ($abb == $abbreviation)
                             {
-                                echo $city . " is the capital of " . $fullname . ".\n";
+                                array_push($result, $city . " is the capital of " . $fullname . ".");
                                 $is_capital = true;
                                 break ;
                             }
@@ -66,9 +67,10 @@
                     }
                 }
                 if (!$is_capital)
-                    echo $location . " is neither a capital nor a state.\n";
+                    array_push($result, $location . " is neither a capital nor a state.");
             }
         }
+        return ($result);
     }
 
 ?>
