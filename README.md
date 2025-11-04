@@ -14,8 +14,14 @@
 ## Symfony - 1 - Composer
 
 ## Symfony - 1 - Base Symfony
+--> Besoin des .env dans https://github.com/kbaridon/info/
 
 ## Symfony - 2 - SQL
+--> Besoin des .env dans https://github.com/kbaridon/info/
+### ex00
+--> DBAL: Fournit une abstraction pour l'acces a la base de donnees.
+--> ORM: Effectue un mapping entre les objets PHP et les DB.
+DBAL est dans le package ORM, mais utiliser DBAL != utiliser ORM.
 
 ## Symfony - 3 - Sessions
 
