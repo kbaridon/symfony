@@ -1,0 +1,8 @@
+{% extends 'article/base.html.twig' %}
+
+{% block content %}
+    <h2>Article sur {{ article|capitalize }}</h2>
+    <p>
+        Voici l'article concernant le sujet : {{ article }}.
+    </p>
+{% endblock %}
